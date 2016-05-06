@@ -1,0 +1,46 @@
+body {
+	background-color: #93B7BE;
+}
+
+div {
+	position: relative;
+	width: 50%;
+	left: 25%;
+	top: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	color: #454545;
+	text-align: center;
+}
+
+li, button, input, p {
+	font-family: 'Merriweather', serif;
+	color: #454545;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+button {
+	padding: 10px;
+	background-color: #785964;
+	border: none;
+	color: #F1FFFA;
+	font-weight: bold;
+}
+
+input[type="text"] {
+	padding: 10px;
+	width: 80%;
+	color: #454545;
+}
+
+input:focus {
+	outline: none;
+	border: 2px solid #D5C7BC;
+}
+
