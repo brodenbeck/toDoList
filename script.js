@@ -2,9 +2,7 @@ var app = angular.module('myModule', []);
 
 app.controller('toDoController', function($scope) {
 	$scope.toDo = [
-		{ item: "Read ng-book", done: false },
-		{ item: "Make to-do list application", done: false },
-		{ item: "Go grocery shopping", done: false }
+		
 	];
 
 	$scope.addToDo = function() {
@@ -13,13 +11,15 @@ app.controller('toDoController', function($scope) {
 	};
 
 	$scope.total = function() {
-		return $scope.toDo.length;
+		if($scope.toDo.length === 1) {
+			return "is " + $scope.toDo.length + " item";
+		} else {
+			return "are " + $scope.toDo.length + " items";
+		}
 	}
 
 	// in-progress
 	$scope.clearCompleted = function() {
-        $scope.toDo.done = toDo.filter($scope.toDo, function(task){
-            return !toDo.done;
-        });
+        
     };
 });

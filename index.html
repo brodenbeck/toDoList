@@ -11,7 +11,7 @@
 		
 		<div ng-controller="toDoController">
 			<h1>To Do List</h1>
-			<h3>There are {{total()}} items for you to complete.</h3>
+			<h3>There {{total()}} for you to complete.</h3>
 			<form>
 				<input type="text" placeholder="what do you need to do?" ng-model="formToDo"></input>
 				<button type="button" ng-click="addToDo()">ADD</button>
@@ -24,7 +24,7 @@
 				</li>
 			</ul>
 
-			<button type="button" ng-click="clearCompleted()">CLEAR</button>
+			<button type="button" ng-click="clearCompleted()">CLEAR COMPLETED</button>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
