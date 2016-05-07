@@ -20,6 +20,12 @@ app.controller('toDoController', function($scope) {
 
 	// in-progress
 	$scope.clearCompleted = function() {
-        
+        var oldList = $scope.toDo;
+        $scope.toDo = [];
+        angular.forEach(oldList, function(task) {
+            if (!task.done) {
+            	$scope.toDo.push(task);
+        	}
+        });
     };
 });
