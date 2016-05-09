@@ -2,7 +2,7 @@ body {
 	background-color: #93B7BE;
 }
 
-div {
+#wrapper {
 	position: relative;
 	width: 50%;
 	left: 25%;
@@ -50,3 +50,20 @@ button:focus {
 	border: 2px solid #D5C7BC;
 }
 
+@media(max-width: 800px) {
+	#wrapper {
+		width: 90%;
+		left: 5%;
+	}
+}
+
+@media(max-width: 450px) {
+	#wrapper {
+		width: 100%;
+		left: 0;
+	}
+
+	input[type="text"] {
+		max-width: 75%;
+	}
+}

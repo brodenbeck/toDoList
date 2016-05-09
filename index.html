@@ -11,12 +11,12 @@
 
 	<body ng-app="myModule">
 		
-		<div ng-controller="toDoController">
+		<div id="wrapper" ng-controller="toDoController">
 			<h1>To Do List</h1>
 			<h3>There {{total()}} for you to complete.</h3>
 			<form>
 				<input required type="text" placeholder="what do you need to do?" ng-model="formToDo"></input>
-				<button type="button" ng-click="addToDo()">ADD</button>
+				<button type="button" ng-click="addToDo(formToDo)">ADD</button>
 			</form>
 
 			<ul>
